@@ -1,9 +1,9 @@
 <p align="center"><a href="https://www.oriontek.do/" target="_blank"><img src="https://itla.edu.do/wp-content/uploads/2021/04/logo-full-2.jpg" width="200"></a></p>
 
 ## Integrantes:
--Micol Peralta
--Williams Caro Galban
--Enderson Florian Solano
+- Micol Peralta
+- Williams Caro Galban
+- Enderson Florian Solano
 
 ## 1. Nombre del proyecto
 Resvi - Reserva tu viaje
