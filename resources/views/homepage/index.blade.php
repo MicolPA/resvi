@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="homepagestyle/Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="homepagestyle/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="homepagestyle/nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.21.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     
     
@@ -35,7 +34,7 @@
     <meta property="og:type" content="website">
   </head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-43d2"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+        <a href="#" class="u-image u-logo u-image-1">
           <img src="homepagestyle/images/default-logo.png" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
@@ -48,19 +47,50 @@
             </a>
           </div>
           <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
+            <ul class="u-nav u-unstyled u-nav-1">
+              @if (Route::has('login'))
+              <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                  @auth
+                  <li class="u-nav-item"><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline u-button-style u-nav-link" style="padding: 10px 20px;">Dashboard</a></li>
+                  @else
+                  <li class="u-nav-item"><a href="{{ route('login') }}" class="u-button-style u-nav-link" style="padding: 10px 20px;">Ingresar</a></li>
+
+                      @if (Route::has('register'))
+                      <li class="u-nav-item"><a href="{{ route('register') }}" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">Registrate</a></li>
+                      @endif
+                  @endauth
+              </div>
+          @endif
+              {{-- </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
-</li></ul>
+</li> --}}
+</ul>
           </div>
           <div class="u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
-</li></ul>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                    <li class="u-nav-item"><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline u-button-style u-nav-link">Dashboard</a></li>
+                    @else
+                    <li class="u-nav-item"><a href="{{ route('login') }}" class="u-button-style u-nav-link">Log in</a></li>
+
+                        @if (Route::has('register'))
+                        <li class="u-nav-item"><a href="{{ route('register') }}" class="u-button-style u-nav-link">Register</a></li>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+                  {{-- <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a> --}}
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
@@ -115,7 +145,7 @@
                   <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-1"></div>
                   <p class="u-text u-text-grey-50 u-text-2">Acceso a los pasajeros a través de una puerta pantográfica con trabamiento, en el entre ejes, localizada atrás del eje delantero, con control remoto accionado por el conductor</p>
                   <img src="homepagestyle/images/d33c87c3137121df21bce4bf29c710b0.png" alt="" class="u-image u-image-contain u-image-default u-image-1">
-                  <a href="https://www.peterbilt.com/products/vocational/567heritage/" class="u-active-black u-border-none u-btn u-button-style u-hover-black u-palette-1-base u-btn-1" target="_blank">learn more</a>
+                  {{-- <a href="https://www.peterbilt.com/products/vocational/567heritage/" class="u-active-black u-border-none u-btn u-button-style u-hover-black u-palette-1-base u-btn-1" target="_blank">learn more</a> --}}
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
@@ -124,17 +154,15 @@
                   <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-2"></div>
                   <p class="u-text u-text-grey-50 u-text-4">Las diversas líneas de autobuses interprovinciales de Marcopolo ofrecen las mejores soluciones en aerodinámica, ergonomía, seguridad y confort.</p>
                   <img src="homepagestyle/images/b2ea4b0df2ce0ea638d7dfa1fd885291.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
-                  <a href="https://www.peterbilt.com/products/vocational/567heritage/" class="u-active-black u-border-none u-btn u-button-style u-hover-black u-palette-1-base u-btn-2" target="_blank">learn more</a>
+                  {{-- <a href="https://www.peterbilt.com/products/vocational/567heritage/" class="u-active-black u-border-none u-btn u-button-style u-hover-black u-palette-1-base u-btn-2" target="_blank">learn more</a> --}}
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
                 <div class="u-container-layout u-valign-middle-sm u-valign-top-lg u-valign-top-md u-valign-top-xl u-valign-top-xs u-container-layout-3">
                   <h2 class="u-text u-text-palette-1-dark-1 u-text-5">MARCOPOLO PARADISO</h2>
                   <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-3"></div>
-                  <p class="u-text u-text-grey-50 u-text-6">Peterbilt’s on-highway product line embodies ideals of innovation, styling and value, each in a versatile configuration that provides purposeful solutions to the challenges facing today’s trucking industry.&nbsp;<br>Every
-                                    truck is designed to maximize profitability, driver comfort and safety.&nbsp;For any on-highway application, Peterbilt offers a truck designed to improve your bottom line. Whether it’s fuel-efficient operation, outstanding
-                                    resale value, maximum weight savings, day-to-day performance or simply the pride of owning a true legend of the North American highway.<br>
-                  </p>
+                  <p class="u-text u-text-grey-50 u-text-6">Texto.<br>
+                  </p>                  
                 </div>
               </div>
             </div>
@@ -159,7 +187,7 @@
                     <h2 class="u-text u-text-body-alt-color u-text-2">Viajes Personalizados</h2>
                     <div class="u-border-1 u-border-white u-line u-line-horizontal u-line-1"></div>
                     <p class="u-text u-text-body-alt-color u-text-3">Resvi, también te ofrece viajes personalizados, si tienes un evento específico para un lugar que quieres ir con tus amigos y familiares también puedes contactarnos</p>
-                    <a href="https://www.peterbilt.com/products/alternative-fuels/" class="u-border-1 u-border-white u-btn u-button-style u-custom-font u-heading-font u-btn-1" target="_blank">Agendar viaje</a>
+                    <a href="#" class="u-border-1 u-border-white u-btn u-button-style u-custom-font u-heading-font u-btn-1" target="_blank">Agendar viaje</a>
                   </div>
                 </div>
               </div>
@@ -248,8 +276,8 @@
           
           <div class="col-4 princing-item red">
             <div class="pricing-divider ">
-                <h3 class="text-light">START-UP</h3>
-              <h4 class="my-0 display-4 text-light font-weight-normal mb-3"><span class="h3">$</span> 120 <span class="h5">/mo</span></h4>
+                <h3 class="text-light">Normales</h3>
+              <h4 class="my-0 display-4 text-light font-weight-normal mb-3"><span class="h3">$</span> 320 <span class="h5">.00</span></h4>
                <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
             <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
       c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
@@ -263,12 +291,12 @@
             </div>
             <div class="card-body bg-white mt-0 shadow">
               <ul class="list-unstyled mb-5 position-relative">
-                <li><b>10</b> users included</li>
-                <li><b>2 GB</b> of storage</li>
-                <li><b>Free </b>Email support</li>
-                <li><b>Help center access</b></li>
+                <li><b>1</b> Voleto</li>
+                <li><b>120L</b> Equipaje</li>
+                <li><b>1 </b>Botella de agua</li>
+                <li><b>Soporte / ayuda</b></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+              <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
             </div>
           </div>
          
@@ -277,8 +305,8 @@
           
           <div class="col-4 princing-item blue">
             <div class="pricing-divider ">
-                <h3 class="text-light">BUSINESS</h3>
-              <h4 class="my-0 display-4 text-light font-weight-normal mb-3"><span class="h3">$</span> 250 <span class="h5">/mo</span></h4>
+                <h3 class="text-light">Personalizados</h3>
+              <h4 class="my-0 display-4 text-light font-weight-normal mb-3"><span class="h3">$</span> 550 <span class="h5">.00</span></h4>
                <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
             <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
       c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
@@ -293,12 +321,12 @@
   
             <div class="card-body bg-white mt-0 shadow">
               <ul class="list-unstyled mb-5 position-relative">
-                <li><b>100 </b>users included</li>
-                <li><b>10 GB</b> of storage</li>
-                <li><b>Free</b>Email support</li>
-                <li><b>Help center access</b></li>
+                <li><b>50 </b>pasajeros</li>
+                <li><b>120L</b> por persona</li>
+                <li>Refrigerio</li>
+                <li><b>Soporte / ayuda</b></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+              <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
             </div>
           </div>
                  
@@ -310,7 +338,7 @@
           <div class="col-4 princing-item green">
             <div class="pricing-divider ">
                 <h3 class="text-light">PRO</h3>
-              <h4 class="my-0 display-4 text-light font-weight-normal mb-3"><span class="h3">$</span> 450 <span class="h5">/mo</span></h4>
+              <h4 class="my-0 display-4 text-light font-weight-normal mb-3"><span class="h3">$</span> 450 <span class="h5">.00</span></h4>
                <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
             <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
       c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
@@ -325,12 +353,12 @@
   
             <div class="card-body bg-white mt-0 shadow">
               <ul class="list-unstyled mb-5 position-relative">
-                <li><b>300</b> users included</li>
-                <li><b>20 GB</b> of storage</li>
-                <li><b>Free</b> Email support</li>
-                <li><b>Help center access</b></li>
+                <li><b>+50 </b>pasajeros</li>
+                <li><b>120L</b> por persona</li>
+                <li>Refrigerio</li>
+                <li><b>Soporte / ayuda</b></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+              <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
             </div>
           </div>
                  
@@ -372,17 +400,17 @@
     </section>    
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-fd39"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <p class="u-small-text u-text u-text-variant u-text-1">Para mayor informacion no duden en contactarnos con nosotros, soporte 24/7 todos los dias.</p>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+      <a class="u-link" href="#" target="_blank">
+        <span>Website Resvi</span>
       </a>
       <p class="u-text">
         <span>created with</span>
       </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
+      <a class="u-link" href="# target="_blank">
+        <span>Micol,Willian y Enderson</span>
       </a>. 
     </section>
 
