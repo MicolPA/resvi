@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +24,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 // rutas para el index
 Route::get('/',[HomePageController::class,'index'])->name('index');
+// rutas para admin
+Route::get('/admin',[DashboardController::class,'index'])->name('inicio');
