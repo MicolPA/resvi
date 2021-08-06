@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>Resvi</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="template-admin/vendors/feather/feather.css">
   <link rel="stylesheet" href="template-admin/vendors/ti-icons/css/themify-icons.css">
@@ -287,10 +287,10 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Normales</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Personalizados</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">PRO</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Envios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('servicios.Normales')}}">Normales</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('servicios.Personalizados')}}">Personalizados</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('servicios.Pro')}}">PRO</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('servicios.Envio')}}">Envios</a></li>
               </ul>
             </div>
           </li>
@@ -302,7 +302,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Ver Lista</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Ver Lista</a></li>
               </ul>
             </div>
           </li>
@@ -314,13 +314,13 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Lista de usuarios</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Agregar Rol</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('usuario.Lista')}}"> Lista de usuarios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('usuario.Rol')}}"> Agregar Rol</a></li>
               </ul>
             </div>
           </li>          
           <li class="nav-item">
-            <a class="nav-link" href="pages/documentation/documentation.html">
+            <a class="nav-link" href="{{route('documentacion.index')}}">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Documentación</span>
             </a>
