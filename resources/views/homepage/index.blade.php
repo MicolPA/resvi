@@ -13,31 +13,53 @@
     <script class="u-script" type="text/javascript" src="homepagestyle/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="homepagestyle/nicepage.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "homepagestyle/images/default-logo.png"
+		"logo": "images/logo.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
   </head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-43d2"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="#" class="u-image u-logo u-image-1">
-          <img src="homepagestyle/images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="images/logo.png" class="" width="160px">
+          </a>
+
+          <ul class="nav nav-pills">
+            @if (Route::has('login'))
+                @auth
+                <li class="nav-item">
+                    <a href="{{ url('/dashboard') }}" class="nav-link text-dark">Dashboard</a>
+                </li>
+                @else
+                <li class="nav-item">
+                    <a href="{{ route('login') }}" class="nav-link text-dark">Iniciar sesión</a></li>
+                    @if (Route::has('register'))
+                    <li><a href="{{ route('register') }}" class="nav-link text-dark">Registrarse</a></li>
+                    @endif
+                @endauth
+            @endif
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Comprar Ticket</a></li>
+          </ul>
+        </header>
+      </div>
+
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
             <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
@@ -46,26 +68,7 @@
 </defs></svg>
             </a>
           </div>
-          <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1">
-              @if (Route::has('login'))
-              <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                  @auth
-                  <li class="u-nav-item"><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline u-button-style u-nav-link" style="padding: 10px 20px;">Dashboard</a></li>
-                  @else
-                  <li class="u-nav-item"><a href="{{ route('login') }}" class="u-button-style u-nav-link" style="padding: 10px 20px;">Ingresar</a></li>
 
-                      @if (Route::has('register'))
-                      <li class="u-nav-item"><a href="{{ route('register') }}" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">Registrate</a></li>
-                      @endif
-                  @endauth
-              </div>
-          @endif
-              {{-- </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
-</li> --}}
-</ul>
-          </div>
           <div class="u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
@@ -162,7 +165,7 @@
                   <h2 class="u-text u-text-palette-1-dark-1 u-text-5">MARCOPOLO PARADISO</h2>
                   <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-3"></div>
                   <p class="u-text u-text-grey-50 u-text-6">Texto.<br>
-                  </p>                  
+                  </p>
                 </div>
               </div>
             </div>
@@ -210,13 +213,13 @@
               <div class="princing-item u-container-style u-layout-cell u-left-cell u-size-12 u-size-60-md u-white u-layout-cell-1">
                 <div class="u-container-layout">
                   <img class="u-expanded-width u-image u-image-1" src="homepagestyle/images/d459afc2165bd356465b67137677beca.png">
-                  <h6 class="u-text u-text-2">Jose Manuel</h6>                                   
+                  <h6 class="u-text u-text-2">Jose Manuel</h6>
                 </div>
               </div>
               <div class="princing-item u-container-style u-layout-cell u-size-12 u-size-60-md u-white u-layout-cell-2">
                 <div class="u-container-layout">
                   <img class="u-expanded-width u-image u-image-2" src="homepagestyle/images/fea9470f91f7e42de415eb02d5347e26.png">
-                  
+
                   <h6 class="u-text u-text-3">Claudio Rojas</h6>
                 </div>
               </div>
@@ -273,7 +276,7 @@
       </div> --}}
       <div class="container-fluid bg-gradient p-5">
         <div class="row m-auto text-center w-75">
-          
+
           <div class="col-4 princing-item red">
             <div class="pricing-divider ">
                 <h3 class="text-light">Normales</h3>
@@ -299,10 +302,10 @@
               <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
             </div>
           </div>
-         
-  
-          
-          
+
+
+
+
           <div class="col-4 princing-item blue">
             <div class="pricing-divider ">
                 <h3 class="text-light">Personalizados</h3>
@@ -318,7 +321,7 @@
       c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
           </svg>
             </div>
-  
+
             <div class="card-body bg-white mt-0 shadow">
               <ul class="list-unstyled mb-5 position-relative">
                 <li><b>50 </b>pasajeros</li>
@@ -329,12 +332,12 @@
               <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
             </div>
           </div>
-                 
-          
-    
-          
-          
-           
+
+
+
+
+
+
           <div class="col-4 princing-item green">
             <div class="pricing-divider ">
                 <h3 class="text-light">PRO</h3>
@@ -350,7 +353,7 @@
       c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
           </svg>
             </div>
-  
+
             <div class="card-body bg-white mt-0 shadow">
               <ul class="list-unstyled mb-5 position-relative">
                 <li><b>+50 </b>pasajeros</li>
@@ -361,15 +364,15 @@
               <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
             </div>
           </div>
-                 
-           
-          
-          
-          
-          
+
+
+
+
+
+
         </div>
       </div>
-    </section>    
+    </section>
     <section class="u-clearfix u-grey-10 u-section-8" id="carousel_4be5">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -397,8 +400,8 @@
     </section>
     <section class="u-clearfix u-image u-section-9" id="carousel_d9b4">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.060442293354!2d-69.89152368553303!3d18.48092118743212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf883f52374ec3%3A0x94a363c3485a6e3a!2sParque%20Enriquillo!5e0!3m2!1ses!2sdo!4v1627666831448!5m2!1ses!2sdo" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>    
-    
+    </section>
+
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-fd39"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Para mayor informacion no duden en contactarnos con nosotros, soporte 24/7 todos los dias.</p>
       </div></footer>
@@ -411,7 +414,7 @@
       </p>
       <a class="u-link" href="# target="_blank">
         <span>Micol,Willian y Enderson</span>
-      </a>. 
+      </a>.
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
