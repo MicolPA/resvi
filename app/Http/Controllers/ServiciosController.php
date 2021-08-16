@@ -15,7 +15,7 @@ class ServiciosController extends Controller
     // constructores para servicios
     public function serviciosNormales()
     {
-        return('Servicios normales');
+        return view('servicios.normales');
     }
     public function servicioPersonalizados()
     {
