@@ -18,27 +18,28 @@ use App\Http\Controllers\DocumentacionController;
 |
 */
 
-// Route::get('/', function () {
+// Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 //     return view('welcome');
 // });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard2', function () {
     return view('dashboard');
 })->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 
 // rutas para el index
 Route::get('/',[HomePageController::class,'index'])->name('index');
 // rutas para admin
-Route::get('/admin',[DashboardController::class,'index'])->name('inicio');
+Route::middleware(['auth:sanctum', 'verified'])->get('/admin',[DashboardController::class,'index'])->name('inicio');
 //rutas para ServiciosController
-Route::get('servicios/normales',[ServiciosController::class,'serviciosNormales'])->name('servicios.Normales');
-Route::get('servicio/personalizados',[ServiciosController::class,'servicioPersonalizados'])->name('servicios.Personalizados');
-Route::get('servicio/pro',[ServiciosController::class,'servicioPro'])->name('servicios.Pro');
-Route::get('servicio/envio',[ServiciosController::class,'servicioEnvio'])->name('servicios.Envio');
+Route::middleware(['auth:sanctum', 'verified'])->get('servicios/normales',[ServiciosController::class,'serviciosNormales'])->name('servicios.Normales');
+Route::middleware(['auth:sanctum', 'verified'])->get('servicio/personalizados',[ServiciosController::class,'servicioPersonalizados'])->name('servicios.Personalizados');
+Route::middleware(['auth:sanctum', 'verified'])->get('servicio/pro',[ServiciosController::class,'servicioPro'])->name('servicios.Pro');
+Route::middleware(['auth:sanctum', 'verified'])->get('servicio/envio',[ServiciosController::class,'servicioEnvio'])->name('servicios.Envio');
 //rutas para Conductores
-Route::get('conductores/lista',[ConductoresController::class,'conductoresVerLista'])->name('conductores.VerLista');
+Route::middleware(['auth:sanctum', 'verified'])->get('conductores/lista',[ConductoresController::class,'conductoresVerLista'])->name('conductores.VerLista');
 //rutas para usuarios
-Route::get('usuarios/lista',[UsuariosController::class,'usuarioLista'])->name('usuario.Lista');
-Route::get('usuarios/rol',[UsuariosController::class,'usuarioRol'])->name('usuario.Rol');
+Route::middleware(['auth:sanctum', 'verified'])->get('usuarios/lista',[UsuariosController::class,'usuarioLista'])->name('usuario.Lista');
+Route::middleware(['auth:sanctum', 'verified'])->get('usuarios/rol',[UsuariosController::class,'usuarioRol'])->name('usuario.Rol');
 //rutas para documentacion
-Route::get('documentacion/',[DocumentacionController::class,'index'])->name('documentacion.index');
+Route::middleware(['auth:sanctum', 'verified'])->get('documentacion/',[DocumentacionController::class,'index'])->name('documentacion.index');
