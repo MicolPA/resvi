@@ -31,7 +31,11 @@ class ServiciosController extends Controller
     }
     public function servicioPro()
     {
-        return('Servicio Pro');
+        return view('servicios.pro');
+    }
+    public function servicioProBoleto()
+    {
+        return view('servicios.proBoleto');
     }
     public function servicioEnvio()
     {
