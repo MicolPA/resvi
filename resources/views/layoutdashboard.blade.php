@@ -306,6 +306,8 @@
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Ver Lista</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Turno</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Viajes<br>Personalizados</a></li>
               </ul>
             </div>
           </li>
