@@ -17,13 +17,17 @@ class ServiciosController extends Controller
     {
         return view('servicios.normales');
     }
-    public function serviciosNormalesFormulario()
+    public function serviciosNormalesBoleto()
     {
         return view('servicios.normalesBoletos');
     }
     public function servicioPersonalizados()
     {
-        return('Servicio Personalizados');
+        return view('servicios.personalizados');
+    }
+    public function servicioPersonalizadosBoleto()
+    {
+        return view('servicios.personlizadosBoletos');
     }
     public function servicioPro()
     {

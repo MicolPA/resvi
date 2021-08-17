@@ -106,7 +106,7 @@
           <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-container-layout-1">
             <h1 class="u-text u-text-body-alt-color u-title u-text-1">Resvi Tours, los mejores en transporte</h1>
             <p class="u-large-text u-text u-text-variant u-text-2">Innovación. Eficiencia de viajes, Valor a largo plazo. Rendimiento sin concesiones.</p>
-            <a class="btn btn-primary">Reservar viaje</a>
+            <a href="{{route('servicios.Personalizados')}}" class="btn btn-primary">Reservar viaje</a>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@
                     <h2 class="u-text u-text-body-alt-color u-text-2">Resvi</h2>
                     <div class="u-border-1 u-border-white u-line u-line-horizontal u-line-1"></div>
                     <p class="u-text u-text-body-alt-color u-text-3">Somos la empresa de transporte de pasajeros más grande de la República Dominicana, con mas de 37 destinos dentro del país y llegando hasta Haití con la mayor frecuencia de viajes en nuestros seguros y modernos autobuses </p>
-                    <a href="#" class="u-border-1 u-border-white u-btn u-button-style u-custom-font u-heading-font u-btn-1" target="_blank">Solicitar Servicio</a>
+                    <a href="{{route('dashboard')}}" class="u-border-1 u-border-white u-btn u-button-style u-custom-font u-heading-font u-btn-1" target="_blank">Solicitar Servicio</a>
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@
                     <h2 class="u-text u-text-body-alt-color u-text-2">Viajes Personalizados</h2>
                     <div class="u-border-1 u-border-white u-line u-line-horizontal u-line-1"></div>
                     <p class="u-text u-text-body-alt-color u-text-3">Resvi, también te ofrece viajes personalizados, si tienes un evento específico para un lugar que quieres ir con tus amigos y familiares también puedes contactarnos</p>
-                    <a href="#" class="u-border-1 u-border-white u-btn u-button-style u-custom-font u-heading-font u-btn-1" target="_blank">Agendar viaje</a>
+                    <a href="{{route('servicios.Personalizados')}}" class="u-border-1 u-border-white u-btn u-button-style u-custom-font u-heading-font u-btn-1" target="_blank">Agendar viaje</a>
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-group u-group-1">
           <div class="u-container-layout u-valign-middle">
-            <h2 class="u-align-center u-text u-text-palette-1-base u-text-1">Nuestros Choferes</h2>
+            <h2 class="u-align-center u-text u-text-palette-1-base u-text-1">Nuestros Mejores Conductores</h2>
             <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-1"></div>
           </div>
         </div>
@@ -299,7 +299,7 @@
                 <li><b>1 </b>Botella de agua</li>
                 <li><b>Soporte / ayuda</b></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
+              <a href="{{route('servicios.Normales')}}" class="btn btn-lg btn-block  btn-custom ">Reservar</a>
             </div>
           </div>
 
@@ -329,7 +329,7 @@
                 <li>Refrigerio</li>
                 <li><b>Soporte / ayuda</b></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
+              <a href="{{route('servicios.Personalizados')}}" class="btn btn-lg btn-block  btn-custom ">Reservar</a>
             </div>
           </div>
 
@@ -361,7 +361,7 @@
                 <li>Refrigerio</li>
                 <li><b>Soporte / ayuda</b></li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block  btn-custom ">Reservar</button>
+              <a href="{{route('servicios.Pro')}}" class="btn btn-lg btn-block  btn-custom ">Reservar</a>
             </div>
           </div>
 

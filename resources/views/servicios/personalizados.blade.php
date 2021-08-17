@@ -61,8 +61,8 @@
       </div> --}}
       <section>
         <div class="container">
-          <h3 class="card-title">Servicios Normales</h3>
-          <br>
+            <h3 class="card-title">Servicios Personalizados</h3>
+            <br>
           <div class="row">
             <!--Profile Card 3-->
             <div class="col-md-4">
@@ -79,7 +79,7 @@
                         </div>
                         
                     <br>
-                    <a href="{{route('servicios.Normales.boleto')}}" class="btn btn-success btn-md">Solicitar</a>
+                    <a href="{{route('servicios.Personalizados.boleto')}}" class="btn btn-success btn-md">Solicitar</a>
                     <br>
                     </div>
                     <br>
