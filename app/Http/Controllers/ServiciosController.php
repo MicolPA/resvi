@@ -39,6 +39,10 @@ class ServiciosController extends Controller
     }
     public function servicioEnvio()
     {
-        return('Servicio Envio');
+        return view('servicios.envio');
+    }
+    public function servicioEnvioBoleto()
+    {
+        return view('servicios.envioBoleto');
     }
 }
