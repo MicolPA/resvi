@@ -14,6 +14,14 @@ class ConductoresController extends Controller
     }
     public function conductoresVerLista()
     {
-        return('Lista de conductores');
+        return view('conductores.lista');
+    }
+    public function conductoresTurno()
+    {
+        return view('conductores.turno');
+    }
+    public function conductoresPersonalizado()
+    {
+        return view('conductores.personalizado');
     }
 }

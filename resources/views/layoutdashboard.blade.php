@@ -298,26 +298,26 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a class="nav-link" data-toggle="collapse" href="#conductor" aria-expanded="false" aria-controls="conductor">
               <i class="icon-columns menu-icon"></i>
               <span class="menu-title">Conductores</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="form-elements">
+            <div class="collapse" id="conductor">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Ver Lista</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Turno</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Viajes<br>Personalizados</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('conductores.Turno')}}">Turno</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('conductores.Personalizado')}}">Viajes<br>Personalizados</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link" data-toggle="collapse" href="#usuario" aria-expanded="false" aria-controls="usuario">
               <i class="icon-head menu-icon"></i>
               <span class="menu-title">Usuarios</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="auth">
+            <div class="collapse" id="usuario">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{route('usuario.Lista')}}"> Lista de usuarios</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{route('usuario.Rol')}}"> Agregar Rol</a></li>
