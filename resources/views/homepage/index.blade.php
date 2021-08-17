@@ -55,7 +55,7 @@
                     @endif
                 @endauth
             @endif
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Comprar Ticket</a></li>
+            <li class="nav-item"><a href="{{route('servicios.Normales')}}" class="nav-link active" aria-current="page">Comprar Ticket</a></li>
           </ul>
         </header>
       </div>

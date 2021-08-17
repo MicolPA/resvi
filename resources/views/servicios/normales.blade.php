@@ -72,11 +72,12 @@
                         <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>Justin Mccoy<small>Conductor</small></h3>
+                        <h2>La Altagracia<small>Conductor -  Jacque Gille</small></h3>
                         <div class="icon-block"><a href="#"><i class="ti-facebook"></i></a><a href="#"> <i class="ti-twitter"></i></a><a href="#"> <i class="ti-instagram"></i></a></div>
-                    </div>
+                        </div>
+                        
                     <br>
-                    <a class="btn btn-success btn-md">Solicitar</a>
+                    <a href="{{route('servicios.Normales.boleto')}}" class="btn btn-success btn-md">Solicitar</a>
                     <br>
                     </div>
                     <br>
@@ -90,7 +91,7 @@
                         <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>Justin Mccoy<small>Conductor</small></h3>
+                        <h2>La Romana<small>Conductor - Jose Soto</small></h3>
                         <div class="icon-block"><a href="#"><i class="ti-facebook"></i></a><a href="#"> <i class="ti-twitter"></i></a><a href="#"> <i class="ti-instagram"></i></a></div>
                         </div>
                         <br>
@@ -108,7 +109,7 @@
                         <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>Justin Mccoy<small>Conductor</small></h3>
+                        <h2>Constanza <small>Conductor - Hector Ortiz</small></h3>
                         <div class="icon-block"><a href="#"><i class="ti-facebook"></i></a><a href="#"> <i class="ti-twitter"></i></a><a href="#"> <i class="ti-instagram"></i></a></div>
                         </div>
                         <br>
@@ -125,7 +126,7 @@
                         <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>Justin Mccoy<small>Conductor</small></h3>
+                        <h2>San Juan<small>Conductor - Mario Joel Aquino</small></h3>
                         <div class="icon-block"><a href="#"><i class="ti-facebook"></i></a><a href="#"> <i class="ti-twitter"></i></a><a href="#"> <i class="ti-instagram"></i></a></div>
                         </div>
                         <br>
@@ -142,7 +143,7 @@
                         <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>Justin Mccoy<small>Conductor</small></h3>
+                        <h2>San Pedro de Macoris<small>Conductor - Micol Rojas</small></h3>
                         <div class="icon-block"><a href="#"><i class="ti-facebook"></i></a><a href="#"> <i class="ti-twitter"></i></a><a href="#"> <i class="ti-instagram"></i></a></div>
                         </div>
                         <br>
@@ -160,7 +161,7 @@
                         <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>Justin Mccoy<small>Conductor</small></h3>
+                        <h2>Barahona<small>Conductor - Paulino Matos</small></h3>
                         <div class="icon-block"><a href="#"><i class="ti-facebook"></i></a><a href="#"> <i class="ti-twitter"></i></a><a href="#"> <i class="ti-instagram"></i></a></div>
                         </div>
                         <br>

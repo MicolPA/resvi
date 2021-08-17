@@ -17,6 +17,10 @@ class ServiciosController extends Controller
     {
         return view('servicios.normales');
     }
+    public function serviciosNormalesFormulario()
+    {
+        return view('servicios.normalesBoletos');
+    }
     public function servicioPersonalizados()
     {
         return('Servicio Personalizados');
