@@ -308,9 +308,11 @@
                 <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Ver Lista</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('conductores.Turno')}}">Turno</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('conductores.Personalizado')}}">Viajes<br>Personalizados</a></li>
+                
+
               </ul>
             </div>
-          </li>
+          </li>         
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#usuario" aria-expanded="false" aria-controls="usuario">
               <i class="icon-head menu-icon"></i>
