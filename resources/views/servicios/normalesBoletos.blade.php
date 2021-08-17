@@ -83,10 +83,14 @@
                           <p class="card-text"><strong>Hora de Salida:</strong> 10:00 PM </p>
                           <p class="card-text"><strong>Hora de Llegada:</strong> 12:00 PM</p>
                           <p class="card-text"><strong>Autobús Asignado:</strong> Modelo New G7</p>
+                          <p class="card-text"><strong>Asiento disponibles:</strong> 70</p>
                           <p class="card-text"><strong>Nota:</strong> Si llega 15minutos antes de viaje su boleto sera cancelado</p>
                           <br>
-                          <a href="{{route('servicios.Normales')}}" class="btn btn-primary">Comprar Boleto</a>
-                          <a href="{{route('servicios.Normales')}}" class="btn btn-danger">Cancelar Boleto</a>
+                          {{-- <a href="{{route('servicios.Normales')}}">Boton anterior</a> --}}
+                         
+                            <button onclick="comprarBoleto()" class="btn btn-primary">Comprar Boleto</button>
+                            <button onclick="cancelarBoleto()" class="btn btn-danger">Cancelar Boleto</button>
+                        
                       </div>
                   </div>
               </div>
@@ -95,12 +99,49 @@
           </div>
         </div>
       </div>
-      
-
-
     </div>
   </div>
   <!-- content-wrapper ends -->
 {{-- Final del formulario --}}
+
+{{-- javascript --}}
+  <script>
+    function comprarBoleto()
+    {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Tu solicitud ha sido guardada',
+        showConfirmButton: false,
+        timer: 1500
+      }).then(function() {
+          window.location = "{{route('servicios.Normales')}}";
+      })
+    }
+    function cancelarBoleto()
+    {
+      Swal.fire({
+        title: '¿Está seguro?',
+        text: "¡No podrás revertir esto!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: ' sí, ¡Confirmado!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            '¡Cancelado!',
+            'Tu solicitud se cancelo con exito.',
+            'success'
+          ).then(function() {
+              window.location = "{{route('servicios.Normales')}}";
+          })
+        }
+      })
+    }
+  </script>
+
+{{-- final de javascript --}}
 @endsection
      

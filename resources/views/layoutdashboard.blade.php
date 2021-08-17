@@ -19,7 +19,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('template-admin/css/vertical-layout-light/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/logo-2.png" />
+  <link rel="shortcut icon" href="{{asset('images/logo-2.png')}}"/>
 </head>
 <body>
   <div class="container-scroller">
@@ -367,6 +367,11 @@
   <script src="{{asset('template-admin/js/dashboard.js')}}"></script>
   <script src="{{asset('template-admin/js/Chart.roundedBarCharts.js')}}"></script>
   <!-- End custom js for this page-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  {{-- javascript --}}
+  
+
+{{-- final de javascript --}}
 </body>
 
 </html>
