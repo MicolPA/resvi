@@ -225,7 +225,7 @@
               </div>
               <div class="princing-item u-container-style u-layout-cell u-size-12 u-size-60-md u-white u-layout-cell-3">
                 <div class="u-container-layout">
-                  <img class="u-expanded-width u-image u-image-3" src="homepagestyle/images/01946e8223d3360e8f4566195ce53ab1.png">
+                  <img class="u-expanded-width u-image u-image-3" src="https://blogapi.uber.com/wp-content/uploads/2017/12/CHI_Campan%CC%83a-Foto-de-perfil-conductores-Uber_R2_312x312-03.png">
 
                   <h6 class="u-text u-text-4">Jesus Santo Santo</h6>
                 </div>
@@ -239,8 +239,8 @@
               </div>
               <div class="princing-item u-container-style u-layout-cell u-right-cell u-size-12 u-size-60-md u-white u-layout-cell-5">
                 <div class="u-container-layout">
-                  <img class="u-expanded-width u-image u-image-5" src="homepagestyle/images/915548cb61ae31d2aa45ae8cbc9dc5e8.png">
-                  <h6 class="u-text u-text-6">SMARTNAV</h6>
+                  <img class="u-expanded-width u-image u-image-5" src="https://lh3.googleusercontent.com/proxy/YpgNa3l17sBal7jZgkoqkI2Nscr8QhrdMfsnFCDsVrFOanEeHFAKb-EA1qJTaxw-gIm0rjFG0alKq5-HsCsbvh4pP5qi2msVO0hAgxVKERTz8uRZSF9KeJY">
+                  <h6 class="u-text u-text-6">Jensy Flores</h6>
                 </div>
               </div>
             </div>
