@@ -164,7 +164,7 @@
                 <div class="u-container-layout u-valign-middle-sm u-valign-top-lg u-valign-top-md u-valign-top-xl u-valign-top-xs u-container-layout-3">
                   <h2 class="u-text u-text-palette-1-dark-1 u-text-5">MARCOPOLO PARADISO</h2>
                   <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-3"></div>
-                  <p class="u-text u-text-grey-50 u-text-6">Texto.<br>
+                  <p class="u-text u-text-grey-50 u-text-6">Marcopolo S.A. es un fabricante de autobuses fundado en 1949, en la ciudad brasileña de Caxias do Sul, estado de Río Grande del Sur. La compañía fabrica carrocerías para autobuses y microbuses de uso urbano e interurbano. Marcopolo produce casi la mitad de las carrocerías de autobuses en Brasil y exporta a más de 60 países.<br>
                   </p>
                 </div>
               </div>
