@@ -297,12 +297,13 @@
               </ul>
             </div>
           </li>
+          @can('conductores.index')
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#conductor" aria-expanded="false" aria-controls="conductor">
               <i class="icon-columns menu-icon"></i>
               <span class="menu-title">Conductores</span>
               <i class="menu-arrow"></i>
-            </a>
+            </a>  
             <div class="collapse" id="conductor">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="{{route('conductores.VerLista')}}">Ver Lista</a></li>
@@ -312,7 +313,9 @@
 
               </ul>
             </div>
-          </li>         
+          </li>
+          @endcan
+          @can('usuario.index')
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#usuario" aria-expanded="false" aria-controls="usuario">
               <i class="icon-head menu-icon"></i>
@@ -326,6 +329,8 @@
               </ul>
             </div>
           </li>
+          @endcan         
+          
           {{-- <li class="nav-item">
             <a class="nav-link" href="{{route('documentacion.index')}}">
               <i class="icon-paper menu-icon"></i>
