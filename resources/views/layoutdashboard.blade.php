@@ -26,7 +26,7 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="{{route('dashboard')}}"><img src="{{asset('images/logo-2.png')}}" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="{{route('dashboard')}}"><img src="{{asset('images/logo-3.png')}}" class="mr-2 h-100 w-50" alt="logo"/></a>
         <a class="navbar-brand brand-logo-mini" href="{{route('dashboard')}}"><img src="{{asset('images/logo-2.png')}}" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -324,12 +324,12 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" href="{{route('documentacion.index')}}">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Documentación</span>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </nav>
       @yield('content')
@@ -371,7 +371,7 @@
   <!-- End custom js for this page-->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   {{-- javascript --}}
-  
+
 
 {{-- final de javascript --}}
 
