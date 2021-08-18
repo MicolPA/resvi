@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class UsuariosController extends Controller
 {
@@ -14,7 +15,8 @@ class UsuariosController extends Controller
     }
     public function usuarioLista()
     {
-        return('Lista de Usuarios');
+        $suariosRegistrados = User::paginate(15);
+        return view('usuarios.lista',compact(['suariosRegistrados']));
     }
     public function usuarioRol()
     {

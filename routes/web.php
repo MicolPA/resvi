@@ -45,7 +45,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('conductores/listaconductor
 Route::middleware(['auth:sanctum', 'verified'])->get('conductores/turno',[ConductoresController::class,'conductoresTurno'])->name('conductores.Turno');
 Route::middleware(['auth:sanctum', 'verified'])->get('conductores/viajespersonalizado',[ConductoresController::class,'conductoresPersonalizado'])->name('conductores.Personalizado');
 //rutas para usuarios
-Route::middleware(['auth:sanctum', 'verified'])->get('usuarios/lista',[UsuariosController::class,'usuarioLista'])->name('usuario.Lista');
+Route::middleware(['auth:sanctum', 'verified'])->get('usuarios/listausuario',[UsuariosController::class,'usuarioLista'])->name('usuario.Lista');
 Route::middleware(['auth:sanctum', 'verified'])->get('usuarios/rol',[UsuariosController::class,'usuarioRol'])->name('usuario.Rol');
 //rutas para documentacion
 Route::middleware(['auth:sanctum', 'verified'])->get('documentacion/',[DocumentacionController::class,'index'])->name('documentacion.index');
